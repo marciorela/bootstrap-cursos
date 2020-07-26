@@ -1,0 +1,1 @@
+browser-sync start --server --files "*.html" "d:\fontes\bootstrap-cursos\hcode\sample\assets\css\*.css"
