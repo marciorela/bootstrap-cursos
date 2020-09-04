@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="accordion" id="accordion">
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#a">
+                        A
+                    </button>
+                </div>
+
+                <div class="collapse show" id="a" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptate modi nemo dolor nesciunt. Placeat veritatis alias quidem aliquid doloribus, facilis rem corporis tempore quis velit harum. Necessitatibus, maiores dolore?</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#b">
+                        B
+                    </button>
+                </div>
+
+                <div class="collapse" id="b" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptate modi nemo dolor nesciunt. Placeat veritatis alias quidem aliquid doloribus, facilis rem corporis tempore quis velit harum. Necessitatibus, maiores dolore?</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#c">
+                        C
+                    </button>
+                </div>
+
+                <div class="collapse" id="c" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptate modi nemo dolor nesciunt. Placeat veritatis alias quidem aliquid doloribus, facilis rem corporis tempore quis velit harum. Necessitatibus, maiores dolore?</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(() => {
+
+        });
+    </script>
+</body>
+
+</html>

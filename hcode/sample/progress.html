@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title></title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar w-25" role="progressbar"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 10%"></div>
+        </div>
+
+        <hr>
+
+        <div id="progress" class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 10%"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress">
+            <div class="progress-bar w-25 bg-danger" role="progressbar">25%</div>
+        </div>
+
+        <hr>
+
+        <div class="progress" style="height: 100px">
+            <div class="progress-bar w-25 bg-danger" role="progressbar">25%</div>
+        </div>
+
+        <hr>
+
+        <div class="progress" style="height: 2px">
+            <div class="progress-bar w-25 bg-success" role="progressbar"></div>
+        </div>
+
+        <hr>
+
+        <div class="progress" style="height: 100px">
+            <div class="progress-bar progress-bar-striped w-25" role="progressbar">25%</div>
+        </div>
+
+        <hr>
+
+        <div class="progress" style="height: 100px">
+            <div class="progress-bar progress-bar-striped progress-bar-animated w-25" role="progressbar"></div>
+        </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(() => {
+
+            window.progressInterval = setInterval(() => {
+
+                let progress = $('#progress .progress-bar').css('width').replace('%', '').replace('px','');
+
+                // console.log(progress);
+                progress = parseInt(progress) + 1;
+
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                }
+
+                $('#progress .progress-bar').css('width', progress + '%');
+            }, 1000);
+     
+        });
+    </script>
+</body>
+
+</html>
