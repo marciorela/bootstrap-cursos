@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orlando City</title>
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/orlando.css">
 </head>
 
@@ -49,8 +51,13 @@
                         <li><a href="#">Tickets</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Schedule</a></li>
-                        <li>
-                            <input type="search" placeholder="search...">
+                        <li class="search">
+                            <div class="input-group mb-3">
+                                <input type="search" class="form-control" placeholder="search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -62,6 +69,45 @@
             <img id="logotipo" src="img/orlando-logo.png" alt="Logotipo">
         </div>
     </header>
+
+    <section>
+        <div id="banner">
+            <h1>Orlando City<small>Orlando City Soccer Club</small> </h1>
+        </div>
+
+        <div id="news" class="container">
+
+            <div class="row justify-content-center">
+                <h2>Latest News</h2>
+                <hr>
+            </div>
+
+            <div class="row thumbnails">
+
+                <div class="col-md-3">
+                    <img src="img/noticia-thumb.jpg" alt="Notícia">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, voluptatem sed natus.</h3>
+                    <time>December 21, 2015</time>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/noticia-thumb.jpg" alt="Notícia">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, voluptatem sed natus.</h3>
+                    <time>December 21, 2015</time>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/noticia-thumb.jpg" alt="Notícia">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, voluptatem sed natus.</h3>
+                    <time>December 21, 2015</time>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/noticia-thumb.jpg" alt="Notícia">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, voluptatem sed natus.</h3>
+                    <time>December 21, 2015</time>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
